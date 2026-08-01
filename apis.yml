@@ -1,7 +1,29 @@
 aid: skipjaq
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/skipjaq.png
 name: Skipjaq
-description: 'Skipjaq is a company surfaced as a portfolio company of accel and added to the API Evangelist
-  network as a stub for enrichment. Sector: ai. This profile is a lead awaiting the enrichment pipeline.'
+description: >-
+  Skipjaq, Inc. was a machine-learning performance-optimisation startup that marketed itself as
+  "Performance Optimisation as a Service" and was backed by Accel. Its proprietary automated
+  workload-optimisation software ran repeated optimization tests against a customer's application
+  (hosted in the cloud on AWS EC2 instances behind Elastic Load Balancers) and used machine
+  learning to tune configuration for better application performance, throughput, and latency
+  without manual, expert tuning. The product was delivered as a cloud SaaS and was offered under a
+  beta test agreement. The company is now defunct: the skipjaq.com domain no longer resolves on any
+  common TLD (.com/.io/.ai/.co.uk all return no A/NS records as of 2026-07-21), the last archived
+  snapshot of the site dates to May 2025, and there is no public developer portal, OpenAPI/Swagger
+  specification, first-party SDK, or live API surface. This profile was surfaced as an Accel
+  portfolio lead.
 url: https://raw.githubusercontent.com/api-evangelist/skipjaq/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,12 +31,26 @@ x-backed-by:
 - accel
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: defunct
+x-status-evidence:
+- 'DNS: no A or NS records for skipjaq.com, skipjaq.io, skipjaq.ai, or skipjaq.co.uk (probed 2026-07-21)'
+- 'Wayback: last archived snapshot 2025-05-16; 2018 snapshots describe "Performance Optimisation as a Service" by SKIPJAQ, Inc.'
+- 'GitHub: no official skipjaq organization (404); only third-party skipjaq-artifacts test-run repos from 2017-2018'
+- 'No public OpenAPI, SDK, developer portal, or live API surface found'
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
 - Ai
+- Machine Learning
+- Performance Optimization
+- Performance Testing
+- Load Testing
+- Cloud
+- DevOps
+- SaaS
+- Defunct
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,4 +59,9 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
-  url: http://www.skyscanner.com
+  url: https://skipjaq.com
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 0
+  pass: local-v1
