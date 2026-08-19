@@ -37,7 +37,7 @@ x-status-evidence:
 - 'Wayback: last archived snapshot 2025-05-16; 2018 snapshots describe "Performance Optimisation as a Service" by SKIPJAQ, Inc.'
 - 'GitHub: no official skipjaq organization (404); only third-party skipjaq-artifacts test-run repos from 2017-2018'
 - 'No public OpenAPI, SDK, developer portal, or live API surface found'
-specificationVersion: '0.20'
+specificationVersion: '0.23'
 created: '2026-07-17'
 modified: '2026-07-21'
 tags:
